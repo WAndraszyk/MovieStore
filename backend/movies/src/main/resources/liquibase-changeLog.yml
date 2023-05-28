@@ -1,0 +1,225 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: Witold
+      changes:
+        - createTable:
+            tableName: movie
+            columns:
+              - column:
+                  name: id
+                  type: int8
+                  constraints:
+                    autoIncrement: true
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: genre
+                  type: varchar(255)
+              - column:
+                  name: image_url
+                  type: varchar(255)
+              - column:
+                  name: plot
+                  type: varchar(255)
+              - column:
+                  name: price
+                  type: float8
+              - column:
+                  name: production_year
+                  type: varchar(255)
+              - column:
+                  name: title
+                  type: varchar(255)
+        - insert:
+            tableName: movie
+            columns:
+              - column:
+                  name: id
+                  value: 1
+              - column:
+                  name: genre
+                  value: Crime
+              - column:
+                  name: image_url
+                  value: https://i.pinimg.com/564x/b0/21/fe/b021fe6711ec0a442420719e56633101.jpg
+              - column:
+                  name: plot
+                  value: The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son.
+              - column:
+                  name: price
+                  value: 19.99
+              - column:
+                  name: production_year
+                  value: 1972
+              - column:
+                  name: title
+                  value: The Godfather
+        - insert:
+            tableName: movie
+            columns:
+              - column:
+                  name: id
+                  value: 2
+              - column:
+                  name: genre
+                  value: Drama
+              - column:
+                  name: image_url
+                  value: https://i.pinimg.com/564x/32/c5/23/32c523f1f43f6621ee1c4fde129e569d.jpg
+              - column:
+                  name: plot
+                  value: Over the course of several years, two convicts form a friendship, seeking consolation and, eventually, redemption through basic compassion.
+              - column:
+                  name: price
+                  value: 19.99
+              - column:
+                  name: production_year
+                  value: 1994
+              - column:
+                  name: title
+                  value: The Shawshank Redemption
+        - insert:
+            tableName: movie
+            columns:
+              - column:
+                  name: id
+                  value: 3
+              - column:
+                  name: genre
+                  value: Crime
+              - column:
+                  name: image_url
+                  value: https://wallpapers.com/images/high/goodfellas-movie-poster-template-7cc9ns0pt4wnw6um.webp
+              - column:
+                  name: plot
+                  value: The story of Henry Hill and his life in the mafia, covering his relationship with his wife Karen and his mob partners Jimmy Conway and Tommy DeVito.
+              - column:
+                  name: price
+                  value: 10.99
+              - column:
+                  name: production_year
+                  value: 1990
+              - column:
+                  name: title
+                  value: GoodFellas
+        - insert:
+            tableName: movie
+            columns:
+              - column:
+                  name: id
+                  value: 4
+              - column:
+                  name: genre
+                  value: Drama
+              - column:
+                  name: image_url
+                  value: https://www.themoviedb.org/t/p/original/jcHdP9VsTEZbMTBAGPkRd3bfYTg.jpg
+              - column:
+                  name: plot
+                  value: After a selfish L.A. yuppie learns his estranged father left a fortune to an autistic-savant brother in Ohio that he didn't know existed, he absconds with his brother and sets out across the country, hoping to gain a larger inheritance.
+              - column:
+                  name: price
+                  value: 11.99
+              - column:
+                  name: production_year
+                  value: 1988
+              - column:
+                  name: title
+                  value: Rain Man
+        - insert:
+            tableName: movie
+            columns:
+              - column:
+                  name: id
+                  value: 5
+              - column:
+                  name: genre
+                  value: Sci-Fi
+              - column:
+                  name: image_url
+                  value: https://www.themoviedb.org/t/p/original/dXNAPwY7VrqMAo51EKhhCJfaGb5.jpg
+              - column:
+                  name: plot
+                  value: When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.
+              - column:
+                  name: price
+                  value: 15.99
+              - column:
+                  name: production_year
+                  value: 1999
+              - column:
+                  name: title
+                  value: The Matrix
+        - insert:
+            tableName: movie
+            columns:
+              - column:
+                  name: id
+                  value: 6
+              - column:
+                  name: genre
+                  value: Sci-Fi
+              - column:
+                  name: image_url
+                  value: https://m.media-amazon.com/images/I/71K9HXMF6vL._AC_SL1500_.jpg
+              - column:
+                  name: plot
+                  value: The crew of a commercial spacecraft encounter a deadly lifeform after investigating an unknown transmission.
+              - column:
+                  name: price
+                  value: 19.99
+              - column:
+                  name: production_year
+                  value: 1994
+              - column:
+                  name: title
+                  value: Alien
+        - insert:
+            tableName: movie
+            columns:
+              - column:
+                  name: id
+                  value: 7
+              - column:
+                  name: genre
+                  value: History
+              - column:
+                  name: image_url
+                  value: https://www.themoviedb.org/t/p/original/hS8ydBynxGB9F8QKnv9KeR1jbOj.jpg
+              - column:
+                  name: plot
+                  value: Scottish warrior William Wallace leads his countrymen in a rebellion to free his homeland from the tyranny of King Edward I of England.
+              - column:
+                  name: price
+                  value: 16.99
+              - column:
+                  name: production_year
+                  value: 1995
+              - column:
+                  name: title
+                  value: Braveheart
+        - insert:
+            tableName: movie
+            columns:
+              - column:
+                  name: id
+                  value: 8
+              - column:
+                  name: genre
+                  value: History
+              - column:
+                  name: image_url
+                  value: https://www.themoviedb.org/t/p/original/51A6psEVg4xIzmQz6xyCZ6PmK2c.jpg
+              - column:
+                  name: plot
+                  value: In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.
+              - column:
+                  name: price
+                  value: 11.99
+              - column:
+                  name: production_year
+                  value: 1993
+              - column:
+                  name: title
+                  value: Schindler's List
